@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#070709]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIMEORA Haute Horlogerie | Timeless Design. Unmatched Precision.</title>
+  <meta name="description" content="Discover TIMEORA Swiss luxury timepieces, tourbillons, chronographs, and perpetual complications crafted for connoisseurs of timeless precision.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+
+  <!-- Tailwind CSS CDN with configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              DEFAULT: '#d4af37',
+              light: '#f3e5ab',
+              dark: '#aa820a',
+            },
+            dark: {
+              950: '#070709',
+              900: '#0c0c0f',
+              850: '#111115',
+              800: '#16161b',
+              700: '#22222a',
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Luxury Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#070709] text-white antialiased font-sans overflow-x-hidden selection:bg-[#d4af37] selection:text-black">
+  
+  <!-- SPA Main Application Mount Container -->
+  <div id="app"></div>
+
+  <!-- Main JavaScript Application Module -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
