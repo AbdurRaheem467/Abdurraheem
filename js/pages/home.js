@@ -23,12 +23,12 @@ export class HomePage {
           <!-- Background Imagery & Atmosphere Lighting -->
           <div class="absolute inset-0 z-0">
             <img 
-              src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=2000&q=85" 
-              alt="TIMEORA Haute Horlogerie Background" 
-              class="w-full h-full object-cover object-center opacity-30 filter brightness-75 scale-105 transform animate-pulse duration-[10000ms]"
+              src="images/hero-bg.jpg" 
+              alt="TIMEORA Haute Horlogerie Luxury Watch Background" 
+              class="w-full h-full object-cover object-right md:object-center opacity-85 filter brightness-90 transition-opacity duration-700"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-[#070709] via-[#070709]/70 to-transparent"></div>
-            <div class="absolute inset-0 bg-radial-vignette opacity-80"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#070709] via-[#070709]/80 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#070709] via-transparent to-[#070709]/60"></div>
           </div>
 
           <!-- Hero Content -->
