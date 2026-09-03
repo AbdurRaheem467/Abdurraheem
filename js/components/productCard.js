@@ -167,15 +167,14 @@ export class ProductCard {
       });
     });
 
-    // Place Order Buttons (Direct Checkout)
+    // Place Order Buttons (Opens Fast Order Form Modal)
     container.querySelectorAll(".product-place-order-btn").forEach(btn => {
       btn.addEventListener("click", (e) => {
         e.preventDefault();
         e.stopPropagation();
         const productId = btn.getAttribute("data-product-id");
         if (productId) {
-          store.addToCart(productId, 1, false);
-          window.location.hash = "#checkout";
+          store.emit("orderModal:open", productId);
         }
       });
     });

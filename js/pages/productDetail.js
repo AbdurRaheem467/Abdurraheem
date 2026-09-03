@@ -188,14 +188,14 @@ export class ProductDetailPage {
                 </button>
               </div>
 
-              <!-- Buy Now Direct Checkout Button -->
+              <!-- Fast Place Order Button -->
               <button 
                 id="pd-buy-now-btn" 
-                class="w-full h-12 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs uppercase tracking-widest border border-white/20 backdrop-blur-md transition-all flex items-center justify-center gap-2"
+                class="w-full h-12 rounded-xl bg-gradient-to-r from-[#d4af37] via-[#dfbe53] to-[#e8cb6e] hover:from-[#e5c158] hover:via-[#ebd074] hover:to-[#f3da87] text-black font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-[0_6px_22px_rgba(212,175,55,0.35)] active:scale-[0.98]"
                 data-product-id="${product.id}"
               >
-                <i data-lucide="zap" class="w-4 h-4 text-[#d4af37]"></i>
-                Express Buy Now
+                <i data-lucide="zap" class="w-4 h-4 text-black"></i>
+                PLACE ORDER
               </button>
 
             </div>
@@ -450,13 +450,11 @@ export class ProductDetailPage {
       });
     }
 
-    // Buy Now Direct Checkout
+    // Place Order Fast Modal
     const buyNowBtn = document.getElementById("pd-buy-now-btn");
     if (buyNowBtn) {
       buyNowBtn.addEventListener("click", () => {
-        const qty = parseInt(qtyInput ? qtyInput.value : 1, 10) || 1;
-        store.addToCart(product.id, qty, false);
-        window.location.hash = "#checkout";
+        store.emit("orderModal:open", product.id);
       });
     }
 

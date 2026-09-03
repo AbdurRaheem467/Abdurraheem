@@ -8,6 +8,7 @@ import { ToastManager } from "./components/toast.js";
 import { SearchModal } from "./components/searchModal.js";
 import { CartDrawer } from "./components/cartDrawer.js";
 import { QuickViewModal } from "./components/quickView.js";
+import { OrderModal } from "./components/orderModal.js";
 
 import { HomePage } from "./pages/home.js";
 import { ShopPage } from "./pages/shop.js";
@@ -42,6 +43,7 @@ class App {
     SearchModal.init();
     CartDrawer.init();
     QuickViewModal.init();
+    OrderModal.init();
 
     // 3. Render Navbar and Footer
     App.renderNavbar();

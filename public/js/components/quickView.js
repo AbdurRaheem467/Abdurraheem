@@ -137,11 +137,21 @@ export class QuickViewModal {
               <!-- Add To Bag Button -->
               <button 
                 id="qv-add-cart-btn" 
-                class="flex-1 py-3 px-6 rounded-xl bg-gradient-to-r from-[#d4af37] to-[#c5a059] text-black font-semibold text-xs uppercase tracking-widest hover:brightness-110 active:scale-98 transition-all flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(212,175,55,0.25)]"
+                class="flex-1 py-3 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs uppercase tracking-wider border border-white/20 transition-all flex items-center justify-center gap-2"
                 data-product-id="${product.id}"
               >
                 <i data-lucide="shopping-bag" class="w-4 h-4"></i>
                 Add To Bag
+              </button>
+
+              <!-- Place Order Button -->
+              <button 
+                id="qv-place-order-btn" 
+                class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-[#d4af37] via-[#dfbe53] to-[#e8cb6e] hover:from-[#e5c158] hover:via-[#ebd074] hover:to-[#f3da87] text-black font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(212,175,55,0.3)] active:scale-98"
+                data-product-id="${product.id}"
+              >
+                <i data-lucide="zap" class="w-4 h-4"></i>
+                PLACE ORDER
               </button>
 
               <!-- Wishlist Button -->
@@ -229,6 +239,15 @@ export class QuickViewModal {
         const qty = parseInt(qtyInput ? qtyInput.value : 1, 10) || 1;
         store.addToCart(product.id, qty, true);
         QuickViewModal.close();
+      });
+    }
+
+    // Place Order Fast Modal
+    const placeOrderBtn = document.getElementById("qv-place-order-btn");
+    if (placeOrderBtn) {
+      placeOrderBtn.addEventListener("click", () => {
+        QuickViewModal.close();
+        store.emit("orderModal:open", product.id);
       });
     }
 
