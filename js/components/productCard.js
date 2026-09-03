@@ -123,7 +123,7 @@ export class ProductCard {
               class="product-view-details-btn w-full py-2.5 px-2.5 rounded-full border border-[#d4af37]/70 hover:border-[#d4af37] bg-black/40 hover:bg-[#d4af37]/15 text-[#d4af37] font-semibold text-[11px] uppercase tracking-wider text-center flex items-center justify-center transition-all duration-300 shadow-sm"
               data-product-id="${product.id}"
             >
-              <span>View Details</span>
+              <span>VIEW DETAILS</span>
             </a>
 
             <!-- Button 2: PLACE ORDER (Right) -->
@@ -131,7 +131,7 @@ export class ProductCard {
               class="product-place-order-btn w-full py-2.5 px-2.5 rounded-full bg-gradient-to-r from-[#d4af37] via-[#dfbe53] to-[#e8cb6e] hover:from-[#e5c158] hover:via-[#ebd074] hover:to-[#f3da87] text-black font-bold text-[11px] uppercase tracking-wider text-center flex items-center justify-center transition-all duration-300 shadow-[0_4px_15px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_22px_rgba(212,175,55,0.5)] active:scale-[0.98]"
               data-product-id="${product.id}"
             >
-              <span>Place Order</span>
+              <span>PLACE ORDER</span>
             </button>
             
           </div>
