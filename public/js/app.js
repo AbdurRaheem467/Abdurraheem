@@ -31,7 +31,7 @@ class App {
 
     appRoot.innerHTML = `
       <div class="min-h-screen flex flex-col bg-[#070709] text-white selection:bg-[#d4af37] selection:text-black">
-        <div id="navbar-root"></div>
+        <div id="navbar-root" class="sticky top-0 z-50 w-full"></div>
         <main id="main-content" class="flex-1"></main>
         <div id="footer-root"></div>
       </div>

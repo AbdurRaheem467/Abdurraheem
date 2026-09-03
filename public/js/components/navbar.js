@@ -13,29 +13,32 @@ export class Navbar {
     const user = store.getUser();
 
     return `
-      <!-- Top Announcement Bar -->
-      <div class="bg-gradient-to-r from-[#0c0c0e] via-[#1a1712] to-[#0c0c0e] border-b border-[#d4af37]/20 text-[11px] py-1.5 px-4 text-center tracking-widest uppercase font-medium text-zinc-300">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-          <span class="hidden md:inline-flex items-center gap-2 text-zinc-400">
-            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#d4af37]"></i>
-            5-Year International Manufacture Warranty
-          </span>
-          <span class="mx-auto md:mx-0 flex items-center gap-2 text-zinc-200">
-            <span class="w-1.5 h-1.5 rounded-full bg-[#d4af37] animate-pulse"></span>
-            Complimentary Armored Courier On All Global Orders
-          </span>
-          <div class="hidden md:flex items-center gap-4 text-zinc-400">
-            <a href="#contact" class="hover:text-[#d4af37] transition-colors">Geneva Concierge</a>
-            <span class="text-zinc-600">|</span>
-            <a href="tel:+41228199000" class="hover:text-[#d4af37] transition-colors">+41 22 819 9000</a>
+      <!-- Permanently Sticky Header: Contains Both Announcement Bar and Main Navigation -->
+      <header id="main-header" class="sticky top-0 z-50 w-full bg-[#0a0a0c] shadow-[0_10px_35px_rgba(0,0,0,0.85)] border-b border-white/10 transition-all duration-300">
+        
+        <!-- 1. Top Announcement Bar (Permanently Visible While Scrolling) -->
+        <div class="w-full bg-gradient-to-r from-[#0c0c0e] via-[#1a1712] to-[#0c0c0e] border-b border-[#d4af37]/20 text-[11px] py-1.5 px-4 text-center tracking-widest uppercase font-medium text-zinc-300">
+          <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <span class="hidden md:inline-flex items-center gap-2 text-zinc-400">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#d4af37]"></i>
+              5-Year International Manufacture Warranty
+            </span>
+            <span class="mx-auto md:mx-0 flex items-center gap-2 text-zinc-200">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#d4af37] animate-pulse"></span>
+              Complimentary Armored Courier On All Global Orders
+            </span>
+            <div class="hidden md:flex items-center gap-4 text-zinc-400">
+              <a href="#contact" class="hover:text-[#d4af37] transition-colors">Geneva Concierge</a>
+              <span class="text-zinc-600">|</span>
+              <a href="tel:+41228199000" class="hover:text-[#d4af37] transition-colors">+41 22 819 9000</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Main Sticky Navigation Header -->
-      <header id="main-header" class="sticky top-0 z-40 w-full transition-all duration-300 bg-[#0a0a0c]/90 backdrop-blur-md border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between h-20">
+        <!-- 2. Main Navigation Bar (Permanently Visible While Scrolling) -->
+        <div class="w-full bg-[#0a0a0c]/95 backdrop-blur-md">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
             
             <!-- Mobile Hamburger Button -->
             <div class="flex items-center lg:hidden">
@@ -157,9 +160,11 @@ export class Navbar {
             </div>
           </div>
         </div>
+      </div>
+    </header>
 
-        <!-- Mobile Navigation Drawer Overlay -->
-        <div id="mobile-drawer" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden transition-opacity">
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div id="mobile-drawer" class="fixed inset-0 z-[100] bg-black/80 backdrop-blur-md hidden transition-opacity">
           <div class="fixed inset-y-0 left-0 max-w-xs w-full bg-[#0e0e11] border-r border-[#d4af37]/30 p-6 flex flex-col justify-between shadow-2xl transform -translate-x-full transition-transform duration-300" id="mobile-drawer-content">
             <div>
               <!-- Header with Close Button -->
@@ -252,7 +257,7 @@ export class Navbar {
             </div>
           </div>
         </div>
-      </header>
+      </div>
     `;
   }
 

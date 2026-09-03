@@ -133,3 +133,26 @@ input[type="range"]::-webkit-slider-thumb {
     color: #000 !important;
   }
 }
+
+/* ==========================================================================
+   Permanently Sticky Luxury Navigation Header
+   Keeps both Top Announcement Bar & Main Navigation locked at top on scroll
+   ========================================================================== */
+html, body {
+  overflow-x: clip;
+}
+
+#navbar-root,
+#main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 50 !important;
+  width: 100% !important;
+}
+
+#main-header {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+

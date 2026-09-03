@@ -11,7 +11,7 @@ export class SearchModal {
     if (!modal) {
       modal = document.createElement("div");
       modal.id = "timeora-search-modal";
-      modal.className = "fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/85 backdrop-blur-xl hidden opacity-0 transition-opacity duration-300";
+      modal.className = "fixed inset-0 z-[100] flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/85 backdrop-blur-xl hidden opacity-0 transition-opacity duration-300";
       modal.innerHTML = `
         <div class="relative w-full max-w-3xl bg-[#111115] border border-[#d4af37]/40 rounded-2xl shadow-[0_25px_70px_rgba(0,0,0,0.95)] overflow-hidden transform -translate-y-4 transition-transform duration-300" id="search-modal-content">
           

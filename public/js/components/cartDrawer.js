@@ -10,7 +10,7 @@ export class CartDrawer {
     if (!drawer) {
       drawer = document.createElement("div");
       drawer.id = "timeora-cart-drawer";
-      drawer.className = "fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden transition-opacity duration-300";
+      drawer.className = "fixed inset-0 z-[100] bg-black/80 backdrop-blur-md hidden transition-opacity duration-300";
       drawer.innerHTML = `
         <div class="fixed inset-y-0 right-0 max-w-md w-full bg-[#0f0f13] border-l border-[#d4af37]/30 flex flex-col justify-between shadow-[0_0_50px_rgba(0,0,0,0.9)] transform translate-x-full transition-transform duration-300" id="cart-drawer-panel">
           

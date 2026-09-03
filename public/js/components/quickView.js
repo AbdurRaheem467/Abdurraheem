@@ -11,7 +11,7 @@ export class QuickViewModal {
     if (!modal) {
       modal = document.createElement("div");
       modal.id = "timeora-quick-view-modal";
-      modal.className = "fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300";
+      modal.className = "fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300";
       document.body.appendChild(modal);
     }
 
