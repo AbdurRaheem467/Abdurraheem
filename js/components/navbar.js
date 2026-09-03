@@ -62,16 +62,16 @@ export class Navbar {
               </a>
             </div>
 
-            <!-- Desktop Navigation Links -->
-            <nav class="hidden lg:flex items-center space-x-7">
-              <a href="#home" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="home">Home</a>
-              <a href="#shop" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="shop">Shop</a>
-              <a href="#collection-mens" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="collection-mens">Men's</a>
-              <a href="#collection-womens" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="collection-womens">Women's</a>
+            <!-- Main Shopping Navigation Links (Left / Middle) -->
+            <nav class="hidden lg:flex items-center space-x-4 xl:space-x-6">
+              <a href="#home" class="nav-link text-xs font-medium uppercase tracking-[0.16em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="home">Home</a>
+              <a href="#shop" class="nav-link text-xs font-medium uppercase tracking-[0.16em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="shop">Shop</a>
+              <a href="#collection-mens" class="nav-link text-xs font-medium uppercase tracking-[0.16em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="collection-mens">Men's</a>
+              <a href="#collection-womens" class="nav-link text-xs font-medium uppercase tracking-[0.16em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="collection-womens">Women's</a>
               
               <!-- Collections Dropdown -->
               <div class="relative group">
-                <button class="nav-link flex items-center gap-1 text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 group-hover:text-[#d4af37] transition-colors py-2">
+                <button class="nav-link flex items-center gap-1 text-xs font-medium uppercase tracking-[0.16em] text-zinc-300 group-hover:text-[#d4af37] transition-colors py-2">
                   <span>Collections</span>
                   <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-zinc-400"></i>
                 </button>
@@ -84,87 +84,85 @@ export class Navbar {
                   <a href="#shop" class="block px-3 py-2 rounded-lg text-[11px] uppercase tracking-widest text-[#d4af37] hover:text-white hover:bg-[#d4af37]/20 transition-all font-semibold">View All Timepieces →</a>
                 </div>
               </div>
-
-              <a href="#collection-new" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="collection-new">New Arrivals</a>
-              <a href="#collection-sale" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-amber-400 hover:text-amber-300 transition-colors py-2 flex items-center gap-1.5" data-route="collection-sale">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-                Sale
-              </a>
-              <a href="#about" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="about">About</a>
-              <a href="#contact" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="contact">Contact</a>
-              <a href="#faq" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="faq">FAQ</a>
             </nav>
 
-            <!-- Actions (Search, Wishlist, Cart, Account) -->
-            <div class="flex items-center space-x-3 sm:space-x-4">
+            <!-- Far Right Navigation & Action Container -->
+            <div class="hidden lg:flex items-center space-x-4 xl:space-x-5 ml-auto">
               
-              <!-- Search Trigger Button -->
-              <button id="nav-search-btn" class="p-2.5 text-zinc-300 hover:text-[#d4af37] hover:bg-white/5 rounded-full transition-colors relative group" aria-label="Open Global Search">
-                <i data-lucide="search" class="w-5 h-5"></i>
-                <span class="hidden xl:inline-block absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] bg-[#1a1a1d] text-zinc-300 px-2 py-0.5 rounded border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">Ctrl + K</span>
-              </button>
+              <!-- Far Right Informational Navigation Items -->
+              <nav class="flex items-center space-x-4 xl:space-x-5">
+                <a href="#collection-new" class="nav-link text-xs font-medium uppercase tracking-[0.16em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="collection-new">New Arrivals</a>
+                <a href="#collection-sale" class="nav-link text-xs font-medium uppercase tracking-[0.16em] text-amber-400 hover:text-amber-300 transition-colors py-2 flex items-center gap-1.5" data-route="collection-sale">
+                  <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                  Sale
+                </a>
+                <a href="#about" class="nav-link text-xs font-medium uppercase tracking-[0.16em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="about">About</a>
+                <a href="#contact" class="nav-link text-xs font-medium uppercase tracking-[0.16em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="contact">Contact</a>
+                <a href="#faq" class="nav-link text-xs font-medium uppercase tracking-[0.16em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="faq">FAQ</a>
+              </nav>
 
-              <!-- Wishlist Trigger Button -->
-              <a href="#wishlist" class="p-2.5 text-zinc-300 hover:text-[#d4af37] hover:bg-white/5 rounded-full transition-colors relative" aria-label="Wishlist">
-                <i data-lucide="heart" class="w-5 h-5"></i>
-                <span id="nav-wishlist-count" class="${wishlistCount > 0 ? 'scale-100' : 'scale-0'} transition-transform absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-[#d4af37] text-black text-[10px] font-bold flex items-center justify-center shadow-lg">
-                  ${wishlistCount}
-                </span>
-              </a>
+              <!-- Action Icons (Search, Wishlist, Cart, Account) -->
+              <div class="flex items-center space-x-2 xl:space-x-3 border-l border-white/15 pl-4 xl:pl-5">
+                
+                <!-- Search Trigger Button -->
+                <button id="nav-search-btn" class="p-2 text-zinc-300 hover:text-[#d4af37] hover:bg-white/5 rounded-full transition-colors relative group" aria-label="Open Global Search">
+                  <i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                  <span class="hidden xl:inline-block absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] bg-[#1a1a1d] text-zinc-300 px-2 py-0.5 rounded border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">Ctrl + K</span>
+                </button>
 
-              <!-- Shopping Cart Drawer Trigger Button -->
-              <button id="nav-cart-btn" class="p-2.5 text-zinc-300 hover:text-[#d4af37] hover:bg-white/5 rounded-full transition-colors relative" aria-label="Shopping Bag">
-                <i data-lucide="shopping-bag" class="w-5 h-5"></i>
-                <span id="nav-cart-count" class="${cartCount > 0 ? 'scale-100' : 'scale-0'} transition-transform absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-[#d4af37] text-black text-[10px] font-bold flex items-center justify-center shadow-lg">
-                  ${cartCount}
-                </span>
-              </button>
-
-              <!-- User / Auth Profile Button -->
-              <div class="relative group">
-                <a href="${user ? '#account' : '#auth'}" class="flex items-center gap-2 p-1.5 rounded-full text-zinc-300 hover:text-[#d4af37] hover:bg-white/5 transition-colors" aria-label="Account">
-                  ${user ? `
-                    <img src="${user.avatar}" alt="${user.name}" class="w-7 h-7 rounded-full object-cover border border-[#d4af37]">
-                    <span class="hidden xl:inline-block text-xs font-medium max-w-[100px] truncate text-zinc-200">${user.name.split(' ')[0]}</span>
-                  ` : `
-                    <div class="w-7 h-7 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
-                      <i data-lucide="user" class="w-4 h-4"></i>
-                    </div>
-                  `}
+                <!-- Wishlist Trigger Button -->
+                <a href="#wishlist" class="p-2 text-zinc-300 hover:text-[#d4af37] hover:bg-white/5 rounded-full transition-colors relative" aria-label="Wishlist">
+                  <i data-lucide="heart" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                  <span id="nav-wishlist-count" class="${wishlistCount > 0 ? 'scale-100' : 'scale-0'} transition-transform absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-[#d4af37] text-black text-[10px] font-bold flex items-center justify-center shadow-lg">
+                    ${wishlistCount}
+                  </span>
                 </a>
 
-                <!-- User Dropdown Menu -->
-                <div class="absolute right-0 mt-2 w-52 bg-[#121215] border border-white/15 rounded-xl shadow-2xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 backdrop-blur-xl z-50">
-                  ${user ? `
-                    <div class="px-3 py-2 border-b border-white/10 mb-1">
-                      <p class="text-xs font-semibold text-white truncate">${user.name}</p>
-                      <p class="text-[10px] text-[#d4af37] truncate">${user.tier || 'VIP Member'}</p>
-                    </div>
-                    <a href="#account" class="block px-3 py-2 rounded-lg text-xs text-zinc-300 hover:text-white hover:bg-white/5 transition-all">VIP Dashboard</a>
-                    <a href="#account-orders" class="block px-3 py-2 rounded-lg text-xs text-zinc-300 hover:text-white hover:bg-white/5 transition-all">Order History</a>
-                    <a href="#wishlist" class="block px-3 py-2 rounded-lg text-xs text-zinc-300 hover:text-white hover:bg-white/5 transition-all">Saved Wishlist</a>
-                    <div class="my-1 border-t border-white/10"></div>
-                    <button id="navbar-logout-btn" class="w-full text-left px-3 py-2 rounded-lg text-xs text-rose-400 hover:bg-rose-500/10 transition-all flex items-center justify-between">
-                      <span>Sign Out</span>
-                      <i data-lucide="log-out" class="w-3.5 h-3.5"></i>
-                    </button>
-                  ` : `
-                    <div class="px-3 py-2 text-[11px] text-zinc-400 border-b border-white/10 mb-1">
-                      Welcome to TIMEORA
-                    </div>
-                    <a href="#auth" class="block px-3 py-2 rounded-lg text-xs text-white bg-[#d4af37]/20 border border-[#d4af37]/40 hover:bg-[#d4af37]/30 transition-all font-medium text-center mb-1">Sign In / Register</a>
-                    <button id="quick-demo-login-nav" class="w-full text-left px-3 py-2 rounded-lg text-[11px] text-[#d4af37] hover:bg-white/5 transition-all">
-                      ⚡ Quick VIP Demo Login
-                    </button>
-                  `}
+                <!-- Shopping Cart Drawer Trigger Button -->
+                <button id="nav-cart-btn" class="p-2 text-zinc-300 hover:text-[#d4af37] hover:bg-white/5 rounded-full transition-colors relative" aria-label="Shopping Bag">
+                  <i data-lucide="shopping-bag" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                  <span id="nav-cart-count" class="${cartCount > 0 ? 'scale-100' : 'scale-0'} transition-transform absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-[#d4af37] text-black text-[10px] font-bold flex items-center justify-center shadow-lg">
+                    ${cartCount}
+                  </span>
+                </button>
+
+                <!-- User / Auth Profile Button -->
+                <div class="relative group">
+                  <a href="${user ? '#account' : '#auth'}" class="flex items-center gap-2 p-1 rounded-full text-zinc-300 hover:text-[#d4af37] hover:bg-white/5 transition-colors" aria-label="Account">
+                    ${user ? `
+                      <img src="${user.avatar}" alt="${user.name}" class="w-7 h-7 rounded-full object-cover border border-[#d4af37]">
+                    ` : `
+                      <div class="w-7 h-7 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
+                        <i data-lucide="user" class="w-4 h-4"></i>
+                      </div>
+                    `}
+                  </a>
+
+                  <!-- User Dropdown Menu -->
+                  <div class="absolute right-0 mt-2 w-52 bg-[#121215] border border-white/15 rounded-xl shadow-2xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 backdrop-blur-xl z-50">
+                    ${user ? `
+                      <div class="px-3 py-2 border-b border-white/10 mb-1">
+                        <p class="text-xs font-semibold text-white truncate">${user.name}</p>
+                        <p class="text-[10px] text-[#d4af37] font-mono truncate">${user.email}</p>
+                      </div>
+                      <a href="#account" class="block px-3 py-2 rounded-lg text-xs text-zinc-300 hover:text-white hover:bg-white/10 transition-colors">VIP Dashboard</a>
+                      <a href="#account-orders" class="block px-3 py-2 rounded-lg text-xs text-zinc-300 hover:text-white hover:bg-white/10 transition-colors">Order History</a>
+                      <a href="#account-profile" class="block px-3 py-2 rounded-lg text-xs text-zinc-300 hover:text-white hover:bg-white/10 transition-colors">Account Settings</a>
+                      <div class="my-1 border-t border-white/10"></div>
+                      <button id="navbar-logout-btn" class="w-full text-left px-3 py-2 rounded-lg text-xs text-rose-400 hover:bg-rose-500/15 transition-colors">Sign Out</button>
+                    ` : `
+                      <a href="#auth" class="block px-3 py-2 rounded-lg text-xs font-semibold text-[#d4af37] hover:bg-[#d4af37]/15 transition-colors">Client Login</a>
+                      <a href="#auth-signup" class="block px-3 py-2 rounded-lg text-xs text-zinc-300 hover:text-white hover:bg-white/10 transition-colors">Create Collector Account</a>
+                      <div class="my-1 border-t border-white/10"></div>
+                      <button id="quick-demo-login-nav" class="w-full text-left px-3 py-2 rounded-lg text-[11px] font-mono text-zinc-400 hover:text-white hover:bg-white/5 transition-colors">Demo Collector Login</button>
+                    `}
+                  </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
     <!-- Mobile Navigation Drawer Overlay -->
     <div id="mobile-drawer" class="fixed inset-0 z-[100] bg-black/80 backdrop-blur-md hidden transition-opacity">
