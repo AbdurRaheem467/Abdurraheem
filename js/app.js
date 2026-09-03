@@ -21,6 +21,7 @@ import { AuthPage } from "./pages/auth.js";
 import { AccountPage } from "./pages/account.js";
 import { AboutPage } from "./pages/about.js";
 import { ContactPage } from "./pages/contact.js";
+import { FaqPage } from "./pages/faq.js";
 
 import { store } from "./state/store.js";
 
@@ -162,6 +163,8 @@ class App {
       App.renderPage(AboutPage.render(), () => {});
     } else if (hash === "#contact") {
       App.renderPage(ContactPage.render(), () => ContactPage.setupEvents());
+    } else if (hash === "#faq") {
+      App.renderPage(FaqPage.render(), () => FaqPage.setupEvents());
     } else {
       // Fallback
       App.renderPage(HomePage.render(), () => HomePage.setupEvents());

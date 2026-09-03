@@ -113,6 +113,7 @@ export class Footer {
                 Customer Concierge
               </h4>
               <ul class="space-y-2.5">
+                <li><a href="#faq" class="text-[#d4af37] font-semibold hover:text-white transition-colors">Frequently Asked Questions (FAQ)</a></li>
                 <li><a href="#contact" class="hover:text-[#d4af37] transition-colors">Contact Concierge</a></li>
                 <li><a href="#contact" class="hover:text-[#d4af37] transition-colors">Book Private Viewing</a></li>
                 <li><a href="#about" class="hover:text-[#d4af37] transition-colors">5-Year Warranty Info</a></li>

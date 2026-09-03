@@ -92,6 +92,7 @@ export class Navbar {
               </a>
               <a href="#about" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="about">About</a>
               <a href="#contact" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="contact">Contact</a>
+              <a href="#faq" class="nav-link text-xs font-medium uppercase tracking-[0.18em] text-zinc-300 hover:text-[#d4af37] transition-colors py-2" data-route="faq">FAQ</a>
             </nav>
 
             <!-- Actions (Search, Wishlist, Cart, Account) -->
@@ -234,6 +235,10 @@ export class Navbar {
                 </a>
                 <a href="#about" class="mobile-nav-link text-sm font-medium uppercase tracking-wider text-zinc-300 hover:text-[#d4af37] transition-colors py-1.5">About TIMEORA</a>
                 <a href="#contact" class="mobile-nav-link text-sm font-medium uppercase tracking-wider text-zinc-300 hover:text-[#d4af37] transition-colors py-1.5">Boutiques & Contact</a>
+                <a href="#faq" class="mobile-nav-link text-sm font-medium uppercase tracking-wider text-zinc-300 hover:text-[#d4af37] transition-colors py-1.5 flex items-center justify-between">
+                  <span>FAQ & Knowledge Base</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-600"></i>
+                </a>
               </nav>
             </div>
 

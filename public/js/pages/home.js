@@ -5,6 +5,7 @@
 import { PRODUCTS } from "../data/products.js";
 import { COLLECTIONS } from "../data/collections.js";
 import { ProductCard } from "../components/productCard.js";
+import { FaqSection } from "../components/faqSection.js";
 import { store } from "../state/store.js";
 import { Storage } from "../state/storage.js";
 
@@ -371,6 +372,9 @@ export class HomePage {
           </div>
         </section>
 
+        <!-- FAQ Accordion Section -->
+        ${FaqSection.render()}
+
       </div>
     `;
   }
@@ -378,5 +382,6 @@ export class HomePage {
   static setupEvents() {
     ProductCard.setupCardEvents(document.getElementById("home-new-arrivals-grid") || document);
     ProductCard.setupCardEvents(document.getElementById("home-best-sellers-grid") || document);
+    FaqSection.setupEvents(document.getElementById("faq-section") || document);
   }
 }
