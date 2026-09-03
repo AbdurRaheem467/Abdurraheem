@@ -16,9 +16,9 @@ export class Footer {
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
             
             <div class="lg:col-span-5 space-y-5">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full border border-[#d4af37] bg-black flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.2)]">
-                  <span class="font-serif text-lg font-bold text-[#d4af37]">T</span>
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-full border border-[#d4af37] bg-black flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.3)] overflow-hidden">
+                  <img src="images/logo/timeora-logo-vertical.jpg" alt="TIMEORA Monogram Logo" class="w-full h-full object-cover" />
                 </div>
                 <span class="font-serif text-2xl font-semibold tracking-[0.25em] text-white">TIMEORA</span>
               </div>

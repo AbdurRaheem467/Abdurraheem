@@ -52,12 +52,12 @@ export class Navbar {
             <!-- Brand Monogram & Logo -->
             <div class="flex items-center gap-3">
               <a href="#home" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-full border border-[#d4af37]/60 bg-gradient-to-br from-[#1c1a14] to-[#0a0a0c] flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.2)] group-hover:border-[#d4af37] transition-all">
-                  <span class="font-serif text-lg font-bold text-[#d4af37] tracking-tighter">T</span>
+                <div class="w-10 h-10 rounded-full border border-[#d4af37]/70 bg-[#0a0a0c] flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.3)] group-hover:border-[#d4af37] transition-all overflow-hidden">
+                  <img src="images/logo/timeora-logo-vertical.jpg" alt="TIMEORA Monogram Logo" class="w-full h-full object-cover" />
                 </div>
                 <div class="flex flex-col">
-                  <span class="font-serif text-2xl font-semibold tracking-[0.25em] text-white group-hover:text-[#d4af37] transition-colors">TIMEORA</span>
-                  <span class="text-[9px] uppercase tracking-[0.35em] text-[#d4af37] -mt-1 font-sans">Haute Horlogerie</span>
+                  <span class="font-serif text-2xl font-semibold tracking-[0.25em] text-white group-hover:text-[#d4af37] transition-colors leading-none">TIMEORA</span>
+                  <span class="text-[9px] uppercase tracking-[0.35em] text-[#d4af37] mt-1 font-sans">Haute Horlogerie</span>
                 </div>
               </a>
             </div>
@@ -172,8 +172,8 @@ export class Navbar {
               <!-- Header with Close Button -->
               <div class="flex items-center justify-between pb-5 border-b border-white/10">
                 <div class="flex items-center gap-2">
-                  <div class="w-8 h-8 rounded-full border border-[#d4af37] bg-black flex items-center justify-center">
-                    <span class="font-serif text-sm font-bold text-[#d4af37]">T</span>
+                  <div class="w-8 h-8 rounded-full border border-[#d4af37] bg-black flex items-center justify-center overflow-hidden">
+                    <img src="images/logo/timeora-logo-vertical.jpg" alt="TIMEORA Monogram Logo" class="w-full h-full object-cover" />
                   </div>
                   <span class="font-serif text-lg font-semibold tracking-widest text-white">TIMEORA</span>
                 </div>
