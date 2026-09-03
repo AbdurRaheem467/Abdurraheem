@@ -118,7 +118,7 @@ export class ContactPage {
               <div class="space-y-2 text-xs font-mono pt-2 border-t border-white/10">
                 <div class="flex items-center gap-3 text-zinc-300">
                   <i data-lucide="phone" class="w-4 h-4 text-[#d4af37]"></i>
-                  <a href="tel:+41228199000" class="hover:text-[#d4af37] transition-colors">+41 22 819 9000 (Geneva)</a>
+                  <a href="https://wa.me/923354191368" target="_blank" class="hover:text-[#d4af37] transition-colors">0335-4191368 (+92 335 4191368)</a>
                 </div>
                 <div class="flex items-center gap-3 text-zinc-300">
                   <i data-lucide="mail" class="w-4 h-4 text-[#d4af37]"></i>

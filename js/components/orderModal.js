@@ -1,4 +1,4 @@
-﻿/**
+/**
  * TIMEORA - Fast Luxury Order Modal Component
  * Allows customers to quickly place an order for a specific timepiece,
  * dynamically calculate totals in PKR (Rs.), and submit directly via WhatsApp.
@@ -361,8 +361,8 @@ export class OrderModal {
             </svg>
             <span>PLACE ORDER ON WHATSAPP</span>
           </button>
-          <p class="text-[10px] text-zinc-500 text-center font-mono mt-2">
-            Instant 24/7 VIP Horology Concierge Confirmation
+          <p class="text-[10px] text-zinc-400 text-center font-mono mt-2">
+            Orders sent directly to WhatsApp: <strong class="text-emerald-400 font-semibold">0335-4191368</strong> (+92 335 4191368)
           </p>
         </div>
 
@@ -619,9 +619,10 @@ Please confirm my order.`;
 
     store.showToast(`Order generated for ${product.name}! Opening WhatsApp...`, "success");
 
-    // Open WhatsApp Web / App with encoded message
+    // Open WhatsApp Web / App directly to 03354191368 (+92 335 4191368)
+    const merchantPhone = "923354191368";
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodedMessage}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${merchantPhone}&text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
 
     // Close the order modal

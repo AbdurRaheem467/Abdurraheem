@@ -28,9 +28,11 @@ export class Navbar {
               Complimentary Armored Courier On All Global Orders
             </span>
             <div class="hidden md:flex items-center gap-4 text-zinc-400">
-              <a href="#contact" class="hover:text-[#d4af37] transition-colors">Geneva Concierge</a>
+              <a href="#contact" class="hover:text-[#d4af37] transition-colors">VIP Concierge</a>
               <span class="text-zinc-600">|</span>
-              <a href="tel:+41228199000" class="hover:text-[#d4af37] transition-colors">+41 22 819 9000</a>
+              <a href="https://wa.me/923354191368" target="_blank" class="hover:text-[#d4af37] transition-colors flex items-center gap-1">
+                <span>WhatsApp: 0335-4191368</span>
+              </a>
             </div>
           </div>
         </div>
